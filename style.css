@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+:root{
+    --bg-color: pink;
+    
+}
+body{
+    background: url("backimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 120vh;
+    padding: 28px;
+    background-position: center;
+    margin: 10px 0;
+    
+   
+    
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+h1{
+    color: var(--bg-color);
+    /* flex-grow: 1; */
+}
+h1:hover{
+    color: chocolate;
+    font-size: 1.8em;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    /* flex-grow: 1; */
+    
+}
+.navbar a{
+    text-decoration: none;
+}
+
+.top button{
+    background-color: white;
+    font-size: 10px;
+    padding: 8px 16px;
+    border: var(--bg-color) 1px solid;
+    border-radius: 100px;
+    color: var(--bg-color);
+    /* flex-grow: 1; */
+}
+.top button:hover{
+    color: white;
+    background-color: var(--bg-color);
+}
+.page{
+    border: black 1px solid;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 1.5em;
+
+    
+}
+h2{
+    font-size: 3.5em;
+    padding: 10px 0;
+}
+h2 span{
+    color: var(--bg-color);
+}
+.order button{
+    font-size: 10px;
+    padding: 8px 16px;
+    color: white;
+    background-color: var(--bg-color);
+    border: 0;
+    border-radius: 100px;
+}
+.order button:hover{
+    color: var(--bg-color);
+    background-color: white;
+    border: var(--bg-color) 1px solid;
+}
+.order a{
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 12px;
+}
+.order{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+}
+.topic img{
+    width: 20em;
+    border-radius: 250px;
+}
+.topic{
+    display: flex;
+    align-items: center;
+    
+}
+  .popular{
+    margin-top: 20px;
+  }
+
+.first, .second, .third, .fourth{
+    background: white;
+    border: beige 2px solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first:hover, .second:hover, .third:hover, .fourth:hover{
+    width: 35%;
+
+}
+.four{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    
+
+}
+.first img, .second img, .third img, .fourth img{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.rate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.rate img{
+    width: 16%;
+}
+ 
+
+
+@media only screen and (max-width:769px) {
+    body{
+        margin: 4em 0;
+    }
+    .page{
+        padding: 0.9em;
+        max-width: 900px
+
+    }
+    .topic img{
+        width: 15em;
+    }
+        h2{
+            font-size: 2.8em;
+            padding: 10px 0;
+        }
+        
+}
+
+
+@media  only screen and (max-width:690px) {
+    .page{
+        height: 455px;
+    }
+    .navbar a{
+        font-size: 14px;
+    }
+    .top button{
+        font-size: 8px;
+        padding: 6px 14px;
+    }
+    .topic img{
+        margin: 3px;
+    }
+    h2{
+        font-size: 2.5em;
+        padding: 10px 0;
+    }
+    h3{
+        font-size: 1em;
+    }
+    .popular{
+        margin: 5px 0;
+    }
+    h4{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .navbar a{
+        font-size: 12px;
+    }
+    .topic img{
+        width: 12em;
+    }
+    .order button{
+        font-size: 6px;
+        padding: 4px 19px;
+    }
+    .order a{
+        font-size: 7px;
+    }
+    .four{
+        /* grid-template-columns: repeat(2,2fr); */
+        /* flex-wrap: wrap(2,2); */
+        
+    }
+    .first, .second, .third, .fourth{
+        width: 100%;
+        padding: 8px ;
+    }
+    .first p, .second p, .third p, .fourth p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:475px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 2px;
+        width: 20%;
+    }    
+    .navbar a{
+        font-size: 10px;
+    }
+    .page{
+        height: 70vh;
+    }
+    .topic img{
+        width: 8.5em;
+    }
+    h1{
+        font-size: 1.1em;
+    }
+    .h1:hover{
+        font-size: 1.3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .taste p{
+        font-size: 12px;
+    }
+    .four{
+        grid-template-columns: repeat(2, 2fr);
+        row-gap: 2;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .first, .second, .third, .fourth{
+        width: 65%;
+        
+
+    }
+    .first h4, .second h4, .third h4, .fourth h4{
+        font-size: 10px;
+
+    }
+    .first img, .second img, .third img, .fourth img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .rate img{
+        width: 10%;
+    }
+    
+}
+@media only screen and (max-width:369px) {
+    h1{
+        font-size: 1em;
+    }
+    h1:hover{
+        font-size: 1.1em
+    }
+    .navbar a{
+        font-size: 9px;
+        
+    }
+    .navbar{
+        width: 20%;
+    }
+    .order button, .top button{
+        font-size: 5px;
+        padding: 3px 9px;
+    }
+    .topic{
+        margin-top: 5px;
+    }
+    .topic img{
+        width: 7em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 0.9em;
+    }
+    .popular{
+        margin-top: 15px;
+    }
+    .four{
+        grid-template-columns: repeat(2,2fr);
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .first, .second, .third, .fourth{
+        width: 70%;
+    }
+    .first h4, .second h4, .third h4, .fourth h4{
+        font-size: 9px;
+
+    }
+    
+}
