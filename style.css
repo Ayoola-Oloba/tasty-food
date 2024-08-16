@@ -130,7 +130,7 @@ h2 span{
     justify-content: center;
 }
 .first:hover, .second:hover, .third:hover, .fourth:hover{
-    width: 35%;
+    width: 120%;
 
 }
 .four{
@@ -204,6 +204,10 @@ h2 span{
     h4{
         font-size: 12px;
     }
+    .first:hover, .second:hover, .third:hover, .fourth:hover{
+        width: 105%;
+    
+    }
 }
 
 @media only screen and (max-width:560px) {
@@ -228,6 +232,10 @@ h2 span{
     .first, .second, .third, .fourth{
         width: 100%;
         padding: 8px ;
+    }
+    .first:hover, .second:hover, .third:hover, .fourth:hover{
+        width: 110%;
+    
     }
     .first p, .second p, .third p, .fourth p{
         font-size: 10px;
@@ -272,6 +280,10 @@ h2 span{
         width: 65%;
         
 
+    }
+    .first:hover, .second:hover, .third:hover, .fourth:hover{
+        width: 70%;
+    
     }
     .first h4, .second h4, .third h4, .fourth h4{
         font-size: 10px;
@@ -326,6 +338,10 @@ h2 span{
     }
     .first, .second, .third, .fourth{
         width: 70%;
+    }
+    .first:hover, .second:hover, .third:hover, .fourth:hover{
+        width: 75%;
+    
     }
     .first h4, .second h4, .third h4, .fourth h4{
         font-size: 9px;
